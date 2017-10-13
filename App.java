@@ -15,9 +15,13 @@ public class App {
             llista.add(RANDOM.nextInt(1000000));
         }
         do {
-            System.out.println("Quin numero vols revisar que estigui en el array?");
+            System.out.println("Quin numero vols revisar que estigui en el array? (Ha de ser senar)");
         }while (!IN.hasNextInt());
         int numero_a_mirar = IN.nextInt();
+        if (!(numero_a_mirar % 2 == 0)) {
+            System.out.println("No es un numero senar, prova a tornar a introduir un numero senar");
+            System.exit(0);
+        }
         long before = System.nanoTime();
         if (llista.contains(numero_a_mirar)) {
             System.out.println("El numero "+numero_a_mirar+" està en el array");
