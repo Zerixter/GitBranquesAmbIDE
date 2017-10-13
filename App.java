@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class App {
 
-    private static final int LONGITURA_LLISTA = 1000000;
+    private static final int LONGITURA_LLISTA = 700000;
     private static final Random RANDOM = new Random();
     private static final Scanner IN = new Scanner(System.in);
 
